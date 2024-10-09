@@ -34,7 +34,7 @@ function getDefaultModelConfig(model: string) {
   } else if (OldVisionModel.includes(model as Model)) {
     return { topP: 1, topK: 32, temperature: 0.4, maxOutputTokens: 4096 }
   } else {
-    return { topP: 0.95, topK: 64, temperature: 1, maxOutputTokens: 8192 }
+    return { topP: 0.95, topK: 40, temperature: 1, maxOutputTokens: 8192 }
   }
 }
 
